@@ -1,0 +1,24 @@
+.grid-articles {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    height: 100%;
+    background: hsla(232, 73%, 65%, 1);
+    background: linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.canvas {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+    canvas {
+        width: 100%;
+        height: 100%;
+    }
+}

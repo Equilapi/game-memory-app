@@ -1,0 +1,64 @@
+.article {
+    &__photo {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__card {
+        position: relative;
+        text-align: center;
+        transition: transform .5s;
+        transform-style: preserve-3d;
+        border: solid 3px #b44d4d;
+        height: 100%;
+        width: 100%;
+
+        &:hover {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    }
+
+    &__front,
+    &__back {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        cursor: pointer;
+        overflow: hidden;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+    }
+
+    &__flip {
+        transform: rotateY(180deg);
+    }
+
+    &__back {
+        transform: rotateY(180deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__front {
+        background-color: #fff743;
+        font-size: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #b44d4d;
+        position: absolute;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        height: 120px;
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        height: 120px;
+    }
+}

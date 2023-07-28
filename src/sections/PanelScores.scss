@@ -1,0 +1,16 @@
+.panel-scores {
+    margin: 20px 0;
+
+    &__col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__title {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
